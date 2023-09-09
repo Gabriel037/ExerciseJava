@@ -2,9 +2,9 @@ package com.br.gabriel.exercisesJava;
 
 import java.util.Scanner;
 /*
- *  Leia a idade de 20 pessoas e exiba a soma das idades.
+ *  Leia a idade de 20 pessoas e exiba a média das idades.
  */
-public class Exercise12 {
+public class Exercise13 {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         try {
@@ -14,7 +14,8 @@ public class Exercise12 {
                 int idade = sc.nextInt();
                 totalIdade += idade;
             }
-            System.out.printf("A soma total das idades informadas é %d anos", totalIdade);
+            double mediaIdade = ((double) totalIdade / 20);
+            System.out.printf("A média entre as idades informadas é %.2f anos", mediaIdade);
             sc.close();
         } catch (Exception err) {
             System.err.printf("Dado inválido!!!%n" + err.getMessage());
