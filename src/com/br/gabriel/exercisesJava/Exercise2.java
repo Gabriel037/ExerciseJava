@@ -1,7 +1,11 @@
-package ExercisesJava;
+package com.br.gabriel.exercisesJava;
 
 import java.util.Scanner;
-
+/*
+ *  Fazer um programa que imprima a média aritmética
+ *  dos números 8,9 e 7. A média dos números 4, 5 e 6.
+ *  A soma das duas médias. A média das médias.
+ */
 public class Exercise2 {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);

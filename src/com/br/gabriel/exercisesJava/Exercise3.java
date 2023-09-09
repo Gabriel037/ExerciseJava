@@ -1,6 +1,10 @@
-package ExercisesJava;
+package com.br.gabriel.exercisesJava;
 
 import java.util.Scanner;
+/*
+ *  Informar um saldo e imprimir o saldo com reajuste de 1%.
+ *
+ */
 
 public class Exercise3 {
     public static void main(String[] args) {
