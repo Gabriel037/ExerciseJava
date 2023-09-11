@@ -64,7 +64,7 @@ public class ExerciseSwing1 {
             int month = (int) spinnerMonth.getValue();
             int day = (int) spinnerDay.getValue();
             int totalDias = (year * 365) + (month * 30) + day;
-            JOptionPane.showMessageDialog(frame, totalDias + " Dias de vida");
+            JOptionPane.showMessageDialog(frame, totalDias + " Dias de vida", "Resposta",  JOptionPane.INFORMATION_MESSAGE);
         });
 
         // Painel principal com GridBagLayout
