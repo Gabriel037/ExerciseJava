@@ -13,7 +13,7 @@ public class Exercise23 {
             System.out.println("Digite o número de termos pretendidos na sequência de Fibonacci:");
             int n = sc.nextInt();
 
-            int[] fibonacci = new int[n];
+            long[] fibonacci = new long[n];
             int primeiroTermoFibonacci = 0;
 
             for (int i = 0; i < n; i++) {
@@ -22,12 +22,12 @@ public class Exercise23 {
                 } else if(i == 1) {
                     fibonacci[i] = primeiroTermoFibonacci + 1;
                 } else {
-                    int proximoTermo = fibonacci[i - 1] + fibonacci[i - 2];
+                    long proximoTermo = fibonacci[i - 1] + fibonacci[i - 2];
                     fibonacci[i] = proximoTermo;
                 }
             }
-            for(int l = 0; l < fibonacci.length; l++) {
-                System.out.printf("%d ", fibonacci[l]);
+            for (long i : fibonacci) {
+                System.out.printf("%d ", i);
             }
             sc.close();
 

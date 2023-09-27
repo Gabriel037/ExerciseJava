@@ -15,7 +15,7 @@ public class ExerciseSwing1 {
 
         // Crie um modelo de SpinnerNumberModel com valor inicial, mínimo, máximo e incremento
         SpinnerNumberModel spinnerYearModel = new SpinnerNumberModel(0, 0, Integer.MAX_VALUE, 1);
-        SpinnerNumberModel spinnerMonthModel = new SpinnerNumberModel(0, 0, 11, 1);
+        SpinnerNumberModel spinnerMonthModel = new SpinnerNumberModel(0, 0, 12, 1);
         SpinnerNumberModel spinnerDayModel = new SpinnerNumberModel(0, 0, 31, 1);
 
         // Crie os JSpinners com os modelos

@@ -9,21 +9,21 @@ public class Exercise15 {
         Scanner sc = new Scanner(System.in);
         try {
             int menorIdade = 0;
-            String nomeMenorIdade = "";
+            StringBuilder nomeMenorIdade = new StringBuilder();
             int i = 0;
-            while ( i < 10) {
-                System.out.println("Digite seu nome");
+            while ( i < 3 ) {
+                System.out.println("Digite seu nome:");
                 String nome = sc.nextLine();
-                System.out.println("Digite sua idade");
+                System.out.println("Digite sua idade:");
                 int idade = sc.nextInt();
                 sc.nextLine();
-                if (i == 0 || idade < menorIdade) {
+                if (i == 0 || idade <= menorIdade) {
                     menorIdade = idade;
-                    nomeMenorIdade = nome;
+                    nomeMenorIdade.append(" ").append(nome);
                 }
                 i++;
             }
-            System.out.printf("A menor idade informada é de %s %d anos",nomeMenorIdade, menorIdade);
+            System.out.printf("O nome da menor idade informada é%s com a idade de %d Anos", nomeMenorIdade.toString(), menorIdade);
             sc.close();
         } catch (Exception err) {
             System.err.printf("Dado inválido!!!%n" + err.getMessage());
