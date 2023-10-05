@@ -1,6 +1,5 @@
 package com.br.gabriel.exercises;
 
-import java.util.Arrays;
 import java.util.Scanner;
 
 public class Exercise1 {
@@ -17,7 +16,7 @@ public class Exercise1 {
             nomeCategoria[i][0] = sc.nextLine();
             System.out.println("Informe a categoria:");
             nomeCategoria[i][1] = sc.nextLine();
-            if(nomeCategoria[i][1].toLowerCase().equals("rx")) {
+            if(nomeCategoria[i][1].equalsIgnoreCase("rx")) {
                 posicaoRX[controlRX] = i;
                 controlRX++;
             } else {
